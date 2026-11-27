@@ -177,6 +177,11 @@
         <span class="t"><b>CEVYQ Group</b><span>Real problems. Real solutions.</span></span>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
       </a>
+      <a class="bz ats glass" id="poompinkaLink" href="#" rel="noopener">
+        <span class="lg ats">PK</span>
+        <span class="t"><b>Poompinka</b><span>LINE stickers</span></span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
       <a class="bz ats glass" id="atsLink" href="#" rel="noopener">
         <span class="lg ats">AT</span>
         <span class="t"><b>Africa Tree Specialists</b><span>International Sourcing Specialists</span></span>
@@ -217,6 +222,7 @@ const ME = {
   hours: { start: 14, end: 20 },            // working hours, Thailand time
   cevyq: "https://www.cevyq.com",
   ats: "https://www.africatreespecialists.com",
+  poompinka: "",   // TODO Chris: link for the Poompinka LINE stickers block
   socials: [
     { name:"Instagram", url:"https://www.instagram.com/cevyqgroup/", cls:"i-ig",  icon:"ig" },
     { name:"LinkedIn",  url:"https://www.linkedin.com/in/Chris-Elliott-CEVYQ", cls:"i-li",  icon:"li" },
@@ -246,6 +252,7 @@ const svg = (k,s) => '<svg width="'+s+'" height="'+s+'" viewBox="0 0 24 24" fill
 /* links */
 document.getElementById("cevyqLink").href = ME.cevyq;
 document.getElementById("footLink").href = ME.cevyq;
+document.getElementById("poompinkaLink").href = ME.poompinka;
 document.getElementById("atsLink").href = ME.ats;
 
 const CONTACTS = [
