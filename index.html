@@ -169,11 +169,6 @@
     <div class="icons glass" id="socials"></div>
   </section>
 
-  <section class="in" style="animation-delay:.16s">
-    <h2>My music</h2>
-    <div class="icons slim glass" id="music"></div>
-  </section>
-
   <section class="in" style="animation-delay:.14s">
     <h2>My businesses</h2>
     <div class="biz">
@@ -222,17 +217,11 @@ const ME = {
   hours: { start: 14, end: 20 },            // working hours, Thailand time
   cevyq: "https://www.cevyq.com",
   ats: "https://www.africatreespecialists.com",
-  music: [
-    { name:"Apple Music",   url:"https://music.apple.com/profile/chriselliott", cls:"i-am", icon:"am" },
-    { name:"YouTube Music", url:"https://music.youtube.com/@chrise475", cls:"i-yt", icon:"yt" },
-    { name:"Spotify",       url:"https://open.spotify.com/user/yqrrsunjxhgxtir90kdnv7dq7", cls:"i-sp", icon:"sp" }
-  ],
   socials: [
-    { name:"Instagram", url:"https://www.instagram.com/iclickwithchris", cls:"i-ig",  icon:"ig" },
+    { name:"Instagram", url:"https://www.instagram.com/cevyqgroup/", cls:"i-ig",  icon:"ig" },
     { name:"LinkedIn",  url:"https://www.linkedin.com/in/Chris-Elliott-CEVYQ", cls:"i-li",  icon:"li" },
     { name:"TikTok",    url:"https://www.tiktok.com/@chris_thai0", cls:"i-tt",  icon:"tt" },
-    { name:"Facebook",  url:"https://www.facebook.com/chris.elliott.412942/", cls:"i-fb",  icon:"fb" },
-    { name:"Pinterest", url:"https://pin.it/mXymO5b4B", cls:"i-pin", icon:"pin" },
+    { name:"Facebook",  url:"https://www.facebook.com/CEVYQ/", cls:"i-fb",  icon:"fb" },
     { name:"Reddit",    url:"https://www.reddit.com/user/OutboundOperator", cls:"i-rd",  icon:"rd" }
   ]
 };
@@ -261,9 +250,7 @@ document.getElementById("atsLink").href = ME.ats;
 
 const CONTACTS = [
   { name:"WhatsApp", url:ME.whatsapp,       cls:"i-wa",    icon:"wa" },
-  { name:"LINE",     url:ME.line,           cls:"i-line",  icon:"line" },
-  { name:"Call Me",  url:"tel:" + ME.phone, cls:"i-phone", icon:"phone" },
-  { name:"CEVYQ",    url:ME.cevyqWhatsapp,  cls:"i-wa",    icon:"wa" }
+  { name:"Call Me",  url:"tel:" + ME.phone, cls:"i-phone", icon:"phone" }
 ];
 function row(s){
   let a;
@@ -287,8 +274,6 @@ CONTACTS.forEach(s => contacts.appendChild(row(s)));
 
 const socials = document.getElementById("socials");
 ME.socials.forEach(s => socials.appendChild(row(Object.assign({iconOnly:true}, s))));
-const music = document.getElementById("music");
-ME.music.forEach(s => music.appendChild(row(Object.assign({iconOnly:true}, s))));
 
 /* live Thailand time and working status */
 function tick(){
